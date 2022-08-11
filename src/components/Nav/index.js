@@ -1,36 +1,34 @@
-import React from "react";
-import { Breadcrumbs, Link } from "@mui/material";
+import React, { useState } from "react";
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 
 export default function Nav() {
+    const [content, setContent] = useState("About Me");
+
+    const handleContent = (event, newContent) => {
+        setContent(newContent);
+    };
+
     return (
-        <Breadcrumbs>
-            <Link
-                underline="hover"
-                color="inherit"                
-            >
+        <ToggleButtonGroup
+            value={content}
+            exclusive
+            onChange={handleContent}
+        >
+            <ToggleButton value="About Me">
                 About Me
-            </Link>
+            </ToggleButton>
 
-            <Link
-                underline="hover"
-                color="inherit"                
-            >
+            <ToggleButton value="Portfolio">
                 Portfolio
-            </Link>
+            </ToggleButton>
 
-            <Link
-                underline="hover"
-                color="inherit"                
-            >
+            <ToggleButton value="Contact">
                 Contact
-            </Link>
+            </ToggleButton>
 
-            <Link
-                underline="hover"
-                color="inherit"                
-            >
+            <ToggleButton value="Resume">
                 Resume
-            </Link>
-        </Breadcrumbs>
+            </ToggleButton>
+        </ToggleButtonGroup>
     );
 };
