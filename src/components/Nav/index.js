@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 
-export default function Nav() {
-    const [content, setContent] = useState("About Me");
+export default function Nav(props) {
+    const { content, setContent } = props;
 
     const handleContent = (event, newContent) => {
         setContent(newContent);
+        console.log(newContent)
     };
 
     return (
