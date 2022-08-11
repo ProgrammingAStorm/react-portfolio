@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Box from '@mui/material/Box';
 
 export default function Footer() {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
 
     return (
         <Box>

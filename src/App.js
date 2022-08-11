@@ -1,15 +1,11 @@
 import './App.css';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-      <header>
-        <h1>Mark Pavel</h1>
-
-        <Nav />
-      </header>
+      <Header />
 
       <main>
         Content
