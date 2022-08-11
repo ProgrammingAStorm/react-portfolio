@@ -17,9 +17,9 @@ export default function Footer() {
                     setValue(newValue);
                 }}
             >
-                <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} />
-                <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} />
-                <BottomNavigationAction label="FaceBook" icon={<FacebookIcon />} />
+                <BottomNavigationAction href="https://github.com/ProgrammingAStorm" target="_blank" component="a" label="GitHub" icon={<GitHubIcon />} />
+                <BottomNavigationAction href="https://www.linkedin.com/in/mark-pavel-744297202/" target="_blank" component="a" label="LinkedIn" icon={<LinkedInIcon />} />
+                <BottomNavigationAction href="https://www.facebook.com/mark.pavel.528" target="_blank" component="a" label="FaceBook" icon={<FacebookIcon />} />
             </BottomNavigation>
         </Box>
     );
