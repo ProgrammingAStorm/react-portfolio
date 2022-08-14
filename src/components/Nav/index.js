@@ -13,6 +13,7 @@ export default function Nav(props) {
             value={content}
             exclusive
             onChange={handleContent}
+            style={{ backgroundColor: "#FFFFFF" }}
         >
             <ToggleButton value="About Me">
                 About Me
