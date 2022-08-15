@@ -197,12 +197,6 @@ export default function Resume() {
                     </List>
                 </Grid2>
             </Grid2>
-
-
-
-
-
-
         </section>
     );
 };
