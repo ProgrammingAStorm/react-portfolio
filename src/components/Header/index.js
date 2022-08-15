@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import React from "react"
 import Nav from '../Nav';
 
@@ -12,9 +12,15 @@ export default function Header(props) {
             { alignItems: 'center' },
             { justifyContent: 'space-around' }
         ]}>
-            <h1 style={{ padding: '1rem', backgroundColor: '#FF1053' }} >Mark Pavel</h1>
+            <Paper
+                elevation={2}
+                component="h1"
+                style={{ padding: '1rem', backgroundColor: '#FF1053' }}
+            >
+                Mark Pavel
+            </Paper>
 
-            <Nav 
+            <Nav
                 content={content}
                 setContent={setContent}
             />

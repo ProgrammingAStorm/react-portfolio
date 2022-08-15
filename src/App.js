@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 import Footer from './components/Footer';
+import { Container } from '@mui/system';
+import { Paper } from '@mui/material';
 
 function App() {
   const [content, setContent] = useState("About Me");
@@ -19,22 +21,35 @@ function App() {
         setContent={setContent}
       />
 
-      <main>
-        {content === "About Me" && (
-          <AboutMe />
-        )}
+      <main style={{ backgroundColor: "#3D0B37", padding: "1.5rem" }}>
 
-        {content === "Portfolio" && (
-          <Portfolio />
-        )}
+        <Paper
+          elevation={3}
+          sx={[
+            {
+              backgroundColor: "#F1DAC4"
+            },
+            {
+              padding: "1.5rem"
+            }
+          ]}
+        >
+          {content === "About Me" && (
+            <AboutMe />
+          )}
 
-        {content === "Contact" && (
-          <Contact />
-        )}
+          {content === "Portfolio" && (
+            <Portfolio />
+          )}
 
-        {content === "Resume" && (
-          <Resume />
-        )}
+          {content === "Contact" && (
+            <Contact />
+          )}
+
+          {content === "Resume" && (
+            <Resume />
+          )}
+        </Paper>
       </main>
 
       <Footer />
