@@ -12,10 +12,10 @@ import { Container } from '@mui/system';
 import { Paper } from '@mui/material';
 
 function App() {
-  const [content, setContent] = useState("About Me");
+  const [content, setContent] = useState('About Me');
 
   return (
-    <div style={{height: "100vh"}}>
+    <div style={{ height: '100vh' }}>
       <Header
         content={content}
         setContent={setContent}
@@ -23,31 +23,31 @@ function App() {
 
       <main
         style={{
-          backgroundColor: "#3D0B37",
-          padding: "1.5rem"
+          backgroundColor: '#3D0B37',
+          padding: '1.5rem'
         }}
       >
 
         <Paper
           elevation={3}
           sx={[
-            { backgroundColor: "#F1DAC4" },
-            { padding: "1.5rem" }
+            { backgroundColor: '#F1DAC4' },
+            { padding: '1.5rem' }
           ]}
         >
-          {content === "About Me" && (
+          {content === 'About Me' && (
             <AboutMe />
           )}
 
-          {content === "Portfolio" && (
+          {content === 'Portfolio' && (
             <Portfolio />
           )}
 
-          {content === "Contact" && (
+          {content === 'Contact' && (
             <Contact />
           )}
 
-          {content === "Resume" && (
+          {content === 'Resume' && (
             <Resume />
           )}
         </Paper>
