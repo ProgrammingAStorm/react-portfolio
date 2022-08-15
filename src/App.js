@@ -15,23 +15,24 @@ function App() {
   const [content, setContent] = useState("About Me");
 
   return (
-    <div>
+    <div style={{height: "100vh"}}>
       <Header
         content={content}
         setContent={setContent}
       />
 
-      <main style={{ backgroundColor: "#3D0B37", padding: "1.5rem" }}>
+      <main
+        style={{
+          backgroundColor: "#3D0B37",
+          padding: "1.5rem"
+        }}
+      >
 
         <Paper
           elevation={3}
           sx={[
-            {
-              backgroundColor: "#F1DAC4"
-            },
-            {
-              padding: "1.5rem"
-            }
+            { backgroundColor: "#F1DAC4" },
+            { padding: "1.5rem" }
           ]}
         >
           {content === "About Me" && (

@@ -10,12 +10,16 @@ export default function Header(props) {
             { backgroundColor: '#1956FF' },
             { display: 'flex' },
             { alignItems: 'center' },
-            { justifyContent: 'space-around' }
+            { justifyContent: 'space-around' },
+            { height: '15%' }
         ]}>
             <Paper
                 elevation={2}
                 component="h1"
-                style={{ padding: '1rem', backgroundColor: '#FF1053' }}
+                style={{ 
+                    padding: '1rem', 
+                    backgroundColor: '#FF1053' 
+                }}
             >
                 Mark Pavel
             </Paper>
