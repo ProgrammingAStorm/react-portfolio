@@ -23,7 +23,10 @@ export default function Footer() {
                 onChange={(event, newValue) => {
                     setValue(newValue);
                 }}
-                sx={{ backgroundColor: '#A69CAC' }}
+                sx={[
+                    { backgroundColor: '#A69CAC' },
+                    { padding: '0.5rem' }
+                ]}
             >
                 <BottomNavigationAction href='https://github.com/ProgrammingAStorm' target='_blank' component='a' label='GitHub' icon={<GitHubIcon />} />
                 <BottomNavigationAction href='https://www.linkedin.com/in/mark-pavel-744297202/' target='_blank' component='a' label='LinkedIn' icon={<LinkedInIcon />} />
