@@ -44,7 +44,7 @@ export default function Portfolio() {
 
     return (
         <section>
-            <Grid2 container spacing={1}>
+            <Grid2 container spacing={3}>
                 {projects.map((project, i) => (
                     <Project
                         title={project.title}

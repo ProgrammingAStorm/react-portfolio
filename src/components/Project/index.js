@@ -13,8 +13,10 @@ export default function Project(props) {
     } = props;
 
     return (
-        <Grid2 xs={6}>
-            <Card sx={{ maxWidth: 256 }}>
+        <Grid2
+            xs={4}
+        >
+            <Card>
                 <CardHeader
                     title={title}
                     action={
