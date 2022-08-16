@@ -1,4 +1,4 @@
-import { Grid, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import React from "react"
 import Nav from '../Nav';
@@ -7,7 +7,13 @@ export default function Header(props) {
     const { content, setContent } = props;
 
     return (
-        <Grid2 container sx={{ backgroundColor: '#1956FF' }}>
+        <Grid2
+            container
+            sx={[
+                { backgroundColor: '#1956FF' },
+                { padding: '1rem' }
+            ]}
+        >
             <Grid2
                 xs={12}
                 sm={6}

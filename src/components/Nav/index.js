@@ -1,5 +1,6 @@
 import React from "react";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Nav(props) {
     const { content, setContent } = props;
@@ -8,8 +9,11 @@ export default function Nav(props) {
         setContent(newContent);
     };
 
+    const matches = useMediaQuery('(min-width:374px)');
+
     return (
         <ToggleButtonGroup
+            size={`${ matches ? 'medium' : 'small' }`}
             value={content}
             exclusive
             onChange={handleContent}

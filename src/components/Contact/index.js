@@ -71,8 +71,6 @@ export default function Contact() {
                     </div>
                 )}
 
-
-
                 <Button type="submit" variant="contained">Submit</Button>
             </form>
         </section>
