@@ -6,7 +6,9 @@ export default function Nav(props) {
     const { content, setContent } = props;
 
     const handleContent = (event, newContent) => {
-        setContent(newContent);
+        if(newContent) {
+            setContent(newContent);
+        }
     };
 
     const matches = useMediaQuery('(min-width:374px)');
