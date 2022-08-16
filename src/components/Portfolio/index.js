@@ -51,6 +51,7 @@ export default function Portfolio() {
                         link={project.link}
                         image={project.image}
                         deploy={project.deploy}
+                        key={project.title}
                     />
                 ))}
             </Grid2>

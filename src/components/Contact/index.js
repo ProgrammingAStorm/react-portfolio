@@ -1,10 +1,9 @@
+import { TextField, Button } from '@mui/material';
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
-
     const [errorMessage, setErrorMessage] = useState('');
 
     function handleChange(e) {
@@ -35,16 +34,36 @@ export default function Contact() {
         <section>
             <h1 data-testid="contact">Contact me</h1>
 
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-                </div>
+            <form
+                id="contact-form"
+                onSubmit={handleSubmit}
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column'
+                }}
+            >
+                <TextField
+                    onBlur={handleChange}
+                    variant="filled"
+                    label="Name"
+                    name='name'
+                />
 
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-                </div>
+                <TextField
+                    onBlur={handleChange}
+                    variant="filled"
+                    label="Email"
+                    name='email'
+                />
+
+                <TextField
+                    multiline
+                    minRows={3}
+                    onBlur={handleChange}
+                    variant="filled"
+                    label="Message"
+                    name='message'
+                />
 
                 {errorMessage && (
                     <div>
@@ -52,12 +71,9 @@ export default function Contact() {
                     </div>
                 )}
 
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-                </div>
 
-                <button type="submit" data-testid="submit">Submit</button>
+
+                <Button type="submit" variant="contained">Submit</Button>
             </form>
         </section>
     );
