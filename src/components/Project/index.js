@@ -14,7 +14,9 @@ export default function Project(props) {
 
     return (
         <Grid2
-            xs={4}
+            xs={12}
+            sm={6}
+            md={4}
         >
             <Card>
                 <CardHeader
