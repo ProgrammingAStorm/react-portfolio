@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/react-portfolio/static/js/main.7b82a6b1.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/pizza-hunt.jpg": "/react-portfolio/static/media/pizza-hunt.fcb11b00796e7646d08b.jpg",
+    "static/media/run-buddy.jpg": "/react-portfolio/static/media/run-buddy.0981f3dd240f73751988.jpg",
+    "static/media/rippit.jpg": "/react-portfolio/static/media/rippit.3e4ab04575fe2c47153f.jpg",
+    "static/media/budget-tracker.jpg": "/react-portfolio/static/media/budget-tracker.1348f2faeacc4a11b2ba.jpg",
+    "static/media/taskmaster-pro.jpg": "/react-portfolio/static/media/taskmaster-pro.f2bf6ba1f156f967381e.jpg",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.67ba999df0d1ad46f733.pdf",
+    "static/media/me.jpg": "/react-portfolio/static/media/me.288abb4c87b4370dbc87.jpg",
+    "static/media/express-note-taker.jpg": "/react-portfolio/static/media/express-note-taker.3733c83b9c0d71a7b491.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.e6c13ad2.css.map": "/react-portfolio/static/css/main.e6c13ad2.css.map",
+    "main.7b82a6b1.js.map": "/react-portfolio/static/js/main.7b82a6b1.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.7b82a6b1.js"
+  ]
+}
